@@ -12,6 +12,9 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "ProductsSheet&Sequence_8",
+        "OrderSheet&Sequence_9",
+        "CustomerSheet&Sequence_11",
         "username&Sequence_1",
         "password&Sequence_1",
         "TestDataFilePath&Sequence_1",
@@ -36,7 +39,9 @@
       "Path": "Customers.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
-      "ArgumentsSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "TestDataFilePath"
+      ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
