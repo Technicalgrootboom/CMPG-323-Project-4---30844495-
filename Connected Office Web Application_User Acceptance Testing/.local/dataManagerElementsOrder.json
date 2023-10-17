@@ -12,7 +12,7 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "ProductsSheet&Sequence_8",
+        "ProductsSheet&Sequence_1",
         "OrderSheet&Sequence_9",
         "CustomerSheet&Sequence_11",
         "username&Sequence_1",
@@ -55,6 +55,14 @@
     },
     {
       "Path": "Orders.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Products.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [],
