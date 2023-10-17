@@ -12,9 +12,15 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "newCellHolder&Sequence_16",
+        "cellHolder&Sequence_16",
+        "CustomerSheet&Sequence_1",
+        "testDelEdOption&Sequence_6",
+        "OrderDetailSheet&Sequence_1",
+        "ProductsTable&Sequence_8",
+        "OrderDetailSheet&Sequence_10",
         "ProductsSheet&Sequence_1",
         "OrderSheet&Sequence_9",
-        "CustomerSheet&Sequence_11",
         "username&Sequence_1",
         "password&Sequence_1",
         "TestDataFilePath&Sequence_1",
@@ -69,6 +75,16 @@
         "ProductsSheet",
         "TestDataFilePath"
       ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "EditDelete.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "testDelEdOption&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     }
