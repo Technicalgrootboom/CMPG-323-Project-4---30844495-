@@ -65,7 +65,10 @@
       "Path": "Products.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
-      "ArgumentsSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "ProductsSheet",
+        "TestDataFilePath"
+      ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     }
