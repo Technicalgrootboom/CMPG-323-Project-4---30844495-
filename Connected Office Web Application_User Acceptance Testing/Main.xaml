@@ -452,7 +452,7 @@
                                   <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,75" sap2010:WorkflowViewState.IdRef="MessageBox_4">
                                     <ui:MessageBox.Text>
                                       <InArgument x:TypeArguments="x:Object">
-                                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_120">CurrentRow["OrderDate"].ToString().Substring(10)</CSharpValue>
+                                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_123">CurrentRow["OrderDate"].ToString().Substring(0,8)</CSharpValue>
                                       </InArgument>
                                     </ui:MessageBox.Text>
                                   </ui:MessageBox>
@@ -541,7 +541,7 @@
                   </sc:BindingList>
                 </ui:IfElseIf.ConditionBlocks>
               </ui:IfElseIf>
-              <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="523,2686" sap2010:WorkflowViewState.IdRef="IfElseIf_7">
+              <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="668,2686" sap2010:WorkflowViewState.IdRef="IfElseIf_7">
                 <ui:IfElseIf.ConditionBlocks>
                   <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                     <ui:IfElseIfBlock BlockType="If">
