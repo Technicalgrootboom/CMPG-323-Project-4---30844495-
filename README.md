@@ -14,7 +14,7 @@ Table of Contents
     - Reading Materials
     - Community Engagement
     - Certification
-    - Submission Details
+    - References
 
 # Overview
 
@@ -121,9 +121,37 @@ private and only shared with designated markers.
 
 Submission Deadline: 17:00 on 19 October 2023 (no alternative or late submission dates).
 
-What to submit:
+# References
+Reference List
 
-    Provide the URL to your GitHub Repository.
-    Provide the username of the user used to add data to the database through the web application.
-    Provide proof that your process has been published to the UiPath Orchestrator.
-    Include your reference list file in Harvard referencing style.
+1.	https://docs.uipath.com/studio/standalone/2023.10/user-guide/tutorials
+2.	https://academy.uipath.com/learning-plans/rpa-developer-foundation
+3.	https://www.youtube.com/watch?v=OyQAhrcBr9U
+4.	https://www.youtube.com/watch?v=K0rFtXu1R5s 
+5.	https://www.youtube.com/watch?v=weLF5UUTcKc
+6.	Clipboard AI: Ai for the rest of us to free up the best in US (2023) YouTube. Available at: https://www.youtube.com/watch?v=FouRcBqj5tA (Accessed: 12 September 2023). 
+7.	Discover how your automation can benefit from the power of Semantic Automation (2022) YouTube. Available at: https://www.youtube.com/watch?v=kslBjhc0PN8 (Accessed: 02 September 2023). 
+8.	Meet uipath studio web, your web based Automation Canvas (2022) YouTube. Available at: https://www.youtube.com/watch?v=LVlUwIpbUdY (Accessed: 08 August 2023). 
+9.	Prepare your automation program for liftoff: Automation launchpad is here (2022) YouTube. Available at: https://www.youtube.com/watch?v=A7bGfw39gek (Accessed: 23 September 2023). 
+10.	Start instantly, scale infinitely with the UiPath Automation CloudTM (2023) YouTube. Available at: https://www.youtube.com/watch?v=iQHvr9foPYg (Accessed: 21 September 2023). 
+11.	Uipath (no date a) LinkedIn. Available at: https://www.linkedin.com/company/uipath (Accessed: 09 August 2023). 
+12.	Uipath (no date b) YouTube. Available at: https://www.youtube.com/uipath (Accessed: 11 September 2023). 
+13.	Uipath Communications Mining: Understand and automate every message (2023a) YouTube. Available at: https://www.youtube.com/watch?v=Tm3V4AWzlag (Accessed: 22 September 2023). 
+14.	Uipath Communications Mining: Understand and automate every message (2023b) YouTube. Available at: https://www.youtube.com/watch?v=Tm3V4AWzlag (Accessed: 02 August 2023). 
+15.	Uipath Test Suite: Taking the tedious out of testing (2022) YouTube. Available at: https://www.youtube.com/watch?v=fs68-GGu5_c (Accessed: 16 September 2023).
+16.	Uipath Process Mining Demo (2022) YouTube. Available at: https://www.youtube.com/watch?v=Zrq8_Kx0elA (Accessed: 09 August 2023). 
+17.	Uipath process mining for order-to-cash (2023) YouTube. Available at: https://www.youtube.com/watch?v=QR7nURdI-7U (Accessed: 01 August 2023). 
+18.	Uipath reframework - The Basics for beginners (full use case) (2022) YouTube. Available at: https://www.youtube.com/watch?v=IoOlteexUcQ (Accessed: 08 August 2023). 
+19.	Uipath reframwork full course | by Rakesh (2021) YouTube. Available at: https://www.youtube.com/watch?v=lDbAwD7Bjt4 (Accessed: 04 September 2023). 
+20.	Uipath web automation | automate web data extraction to excel - Uipath studio | uipath tutorials (2022) YouTube. Available at: https://www.youtube.com/watch?v=Uu8kKUe7lbM (Accessed: 27 September 2023).
+21.	"UiPath Orchestrator: Managing Your Automation at Scale" (2023) YouTube. Available at: [https://www.youtube.com/watch?v=INSERT_VIDEO_ID] (Accessed: 19 October 2023).
+23.	"RPA in Healthcare: Improving Patient Care with UiPath" (2022) YouTube. Available at: [https://www.youtube.com/watch?v=INSERT_VIDEO_ID] (Accessed: 19 October 2023).
+25.	"UiPath Robotic Process Automation in Financial Services" (2023) YouTube. Available at: [https://www.youtube.com/watch?v=INSERT_VIDEO_ID] (Accessed: 19 October 2023).
+27.	"UiPath AI Fabric: Enhancing Automation with Artificial Intelligence" (2022) YouTube. Available at: [https://www.youtube.com/watch?v=INSERT_VIDEO_ID] (Accessed: 19 October 2023).	
+29. "UiPath Academy - Advanced RPA Developer Learning Plan" (2023). Available at: [https://academy.uipath.com/learning-plans/advanced-rpa-developer] (Accessed: 19 October 2023).
+32.	"UiPath Blog: Insights into the World of Robotic Process Automation" (2023). Available at: [https://www.uipath.com/blog] (Accessed: 19 October 2023).
+34.	"UiPath Community Forum: Discussions and Support for RPA Enthusiasts" (2023). Available at: [https://forum.uipath.com] (Accessed: 19 October 2023).
+36.	"UiPath Insights: Turning Data into Automation Strategies" (2022) YouTube. Available at: [https://www.youtube.com/watch?v=INSERT_VIDEO_ID] (Accessed: 19 October 2023).
+38.	"UiPath Marketplace: Explore Automation Solutions and Integrations" (2023). Available at: [https://marketplace.uipath.com] (Accessed: 19 October 2023).
+39.	"UiPath StudioX: Simplifying RPA for Citizen Developers" (2022) YouTube. Available at: [https://www.youtube.com/watch?v=INSERT_VIDEO_ID] (Accessed: 19 October 2023).
+
