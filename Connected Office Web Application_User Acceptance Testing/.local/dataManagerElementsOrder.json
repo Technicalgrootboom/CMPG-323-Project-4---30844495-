@@ -12,6 +12,8 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "dtObject&Sequence_1",
+        "dateTimeString&Sequence_18",
         "ordersDate&Sequence_18",
         "OrderSheet&Sequence_1",
         "newCellHolder&Sequence_16",
