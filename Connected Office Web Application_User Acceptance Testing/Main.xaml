@@ -45,6 +45,10 @@
       <x:String>UiPath.DataTableUtilities</x:String>
       <x:String>UiPath.Core.Activities.SAP</x:String>
       <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>UiPath.Activities.System.Text</x:String>
+      <x:String>UiPath.Core.Activities.DateModifications</x:String>
+      <x:String>UiPath.Activities.System.Workflow.Business</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -115,9 +119,10 @@
       <AssemblyReference>System.CodeDom</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>Connected Office Web Application_User Acceptance Testing.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="888,16302" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="797,16302" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="username" />
       <Variable x:TypeArguments="x:String" Name="password" />
@@ -149,61 +154,61 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="826,85" sap2010:WorkflowViewState.IdRef="MessageBox_1">
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="735,85" sap2010:WorkflowViewState.IdRef="MessageBox_1">
       <ui:MessageBox.Text>
         <InArgument x:TypeArguments="x:Object">
           <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">"Welcome to Connected Office Web Application - User Acceptace Testing\n \nEnter the user's login details bellow:"</CSharpValue>
         </InArgument>
       </ui:MessageBox.Text>
     </ui:MessageBox>
-    <ui:InputDialog Label="{x:Null}" Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="826,239" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Title="Enter user username">
+    <ui:InputDialog Label="{x:Null}" Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="735,239" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Title="Enter user username">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="x:String">
           <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">username</CSharpReference>
         </OutArgument>
       </ui:InputDialog.Result>
     </ui:InputDialog>
-    <ui:InputDialog Label="{x:Null}" Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="826,239" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Title="Enter user password">
+    <ui:InputDialog Label="{x:Null}" Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="735,239" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Title="Enter user password">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="x:String">
           <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">password</CSharpReference>
         </OutArgument>
       </ui:InputDialog.Result>
     </ui:InputDialog>
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="826,85" sap2010:WorkflowViewState.IdRef="MessageBox_2">
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="735,85" sap2010:WorkflowViewState.IdRef="MessageBox_2">
       <ui:MessageBox.Text>
         <InArgument x:TypeArguments="x:Object">
           <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">"Locate the data file"</CSharpValue>
         </InArgument>
       </ui:MessageBox.Text>
     </ui:MessageBox>
-    <ui:SelectFile DisplayName="Browse For File" Filter="Excel|*.xlsx;*.xls;*.xlsm;*.xlsb" sap:VirtualizedContainerService.HintSize="826,138" sap2010:WorkflowViewState.IdRef="SelectFile_1">
+    <ui:SelectFile DisplayName="Browse For File" Filter="Excel|*.xlsx;*.xls;*.xlsm;*.xlsb" sap:VirtualizedContainerService.HintSize="735,138" sap2010:WorkflowViewState.IdRef="SelectFile_1">
       <ui:SelectFile.SelectedFile>
         <OutArgument x:TypeArguments="x:String">
           <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">TestDataFilePath</CSharpReference>
         </OutArgument>
       </ui:SelectFile.SelectedFile>
     </ui:SelectFile>
-    <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="826,292" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Options" OptionsString="Customers;OrderDetails;Orders;Products" Title="Do you want to test Customers,Order Details, Orders and/or Products">
+    <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="735,292" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Options" OptionsString="Customers;OrderDetails;Orders;Products" Title="Do you want to test Customers,Order Details, Orders and/or Products">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="x:String">
           <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">testOption</CSharpReference>
         </OutArgument>
       </ui:InputDialog.Result>
     </ui:InputDialog>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Home Page - EcoPower_Logistics" sap:VirtualizedContainerService.HintSize="826,14873" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsCVEnabled="False" ScopeGuid="38a4509c-bb72-4fc5-ad61-c4140da078b8" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Home Page - EcoPower_Logistics" sap:VirtualizedContainerService.HintSize="735,14873" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsCVEnabled="False" ScopeGuid="38a4509c-bb72-4fc5-ad61-c4140da078b8" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="792,14656" sap2010:WorkflowViewState.IdRef="Sequence_7">
+          <Sequence sap:VirtualizedContainerService.HintSize="701,14656" sap2010:WorkflowViewState.IdRef="Sequence_7">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="730,14541" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="639,14541" sap2010:WorkflowViewState.IdRef="Sequence_6">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="testDelEdOption" />
               </Sequence.Variables>
@@ -212,12 +217,12 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" sap:VirtualizedContainerService.HintSize="668,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="38a4509c-bb72-4fc5-ad61-c4140da078b8" Version="V3">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" sap:VirtualizedContainerService.HintSize="577,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="38a4509c-bb72-4fc5-ad61-c4140da078b8" Version="V3">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/" CvTextArea="1533, 149, 40, 19" CvTextArgument="Login" CvType="Text" DesignTimeRectangle="1525, 137, 55, 40" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Login'" FullSelectorArgument="&lt;webctrl aaname='Login' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Login' tag='A' type='' class='nav-link text-dark' check:innerText='Login' /&gt;" Guid="8164a8b6-94cd-4ed5-8a73-9b82e29688d9" InformativeScreenshot="ad592cdad3386969ab27455b1870fbd6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home Page - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
                 </uix:NClick.Target>
               </uix:NClick>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="668,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="38a4509c-bb72-4fc5-ad61-c4140da078b8" Version="V3">
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="577,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="38a4509c-bb72-4fc5-ad61-c4140da078b8" Version="V3">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Identity/Account/Login" CvElementArea="291, 330, 420, 62" CvTextArea="305, 344, 33, 13" CvTextArgument="Email" CvType="InputBox" DesignTimeRectangle="293, 333, 416, 58" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT Input_Email'" FullSelectorArgument="&lt;webctrl id='Input_Email' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='Input_Email' tag='INPUT' type='email' class='form-control' aaname='Email' /&gt;" Guid="6fc9d73f-cac0-46c0-974e-5a7e7269f259" InformativeScreenshot="20fa19e4d44bcc4d9373920d850fe9ef.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Log in - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
@@ -233,7 +238,7 @@
                   </InArgument>
                 </uix:NTypeInto.Text>
               </uix:NTypeInto>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="668,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="38a4509c-bb72-4fc5-ad61-c4140da078b8" Version="V3">
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="577,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="38a4509c-bb72-4fc5-ad61-c4140da078b8" Version="V3">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Identity/Account/Login" CvElementArea="292, 391, 418, 59" CvTextArea="305, 402, 58, 13" CvTextArgument="Password" CvType="InputBox" DesignTimeRectangle="293, 391, 416, 58" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FriendlyName="'INPUT Input_Password'" FullSelectorArgument="&lt;webctrl id='Input_Password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='Input_Password' tag='INPUT' type='password' class='form-control' aaname='Password' /&gt;" Guid="a80fe350-5591-4484-aa55-e06d1d0ff15d" InformativeScreenshot="e07518e74fb889437b2b1e7a92ccea27.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Log in - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
@@ -249,7 +254,7 @@
                   </InArgument>
                 </uix:NTypeInto.Text>
               </uix:NTypeInto>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="668,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="38a4509c-bb72-4fc5-ad61-c4140da078b8" Version="V3">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="577,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="38a4509c-bb72-4fc5-ad61-c4140da078b8" Version="V3">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Identity/Account/Login" CvElementArea="291, 451, 20, 19" CvType="CheckBox" DesignTimeRectangle="293, 453, 16, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FriendlyName="'Checkbox'" FullSelectorArgument="&lt;webctrl id='Input_RememberMe' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='Input_RememberMe' tag='INPUT' type='checkbox' class='form-check-input' aaname='                                                          Remember me?                         ' /&gt;" Guid="a8f93b73-8917-4aed-a94b-5f5372546aed" InformativeScreenshot="e566b62942d5191a252e0504a881a5be.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Log in - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
@@ -260,12 +265,12 @@
                   </uix:TargetAnchorable>
                 </uix:NClick.Target>
               </uix:NClick>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log in'" sap:VirtualizedContainerService.HintSize="668,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="38a4509c-bb72-4fc5-ad61-c4140da078b8" Version="V3">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log in'" sap:VirtualizedContainerService.HintSize="577,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="38a4509c-bb72-4fc5-ad61-c4140da078b8" Version="V3">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Identity/Account/Login" CvElementArea="292, 480, 419, 50" CvTextArea="473, 496, 56, 22" CvTextArgument="Log in" CvType="Button" DesignTimeRectangle="293, 481, 416, 48" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Log in'" FullSelectorArgument="&lt;webctrl id='login-submit' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='login-submit' tag='BUTTON' type='submit' class='w-100 btn btn-lg btn-primary' aaname='Log in' check:innerText='Log in' /&gt;" Guid="074d8ac9-1873-4998-9408-3bfeeeea0e2b" InformativeScreenshot="769d3cc61f78463b7490c29c03131feb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Log in - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
                 </uix:NClick.Target>
               </uix:NClick>
-              <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="668,2581" sap2010:WorkflowViewState.IdRef="IfElseIf_5">
+              <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="577,2581" sap2010:WorkflowViewState.IdRef="IfElseIf_5">
                 <ui:IfElseIf.ConditionBlocks>
                   <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                     <ui:IfElseIfBlock BlockType="If">
@@ -401,7 +406,7 @@
                   </sc:BindingList>
                 </ui:IfElseIf.ConditionBlocks>
               </ui:IfElseIf>
-              <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="668,2543" sap2010:WorkflowViewState.IdRef="IfElseIf_6">
+              <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="577,2543" sap2010:WorkflowViewState.IdRef="IfElseIf_6">
                 <ui:IfElseIf.ConditionBlocks>
                   <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                     <ui:IfElseIfBlock BlockType="If">
@@ -449,10 +454,10 @@
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,75" sap2010:WorkflowViewState.IdRef="MessageBox_5">
+                                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,75" sap2010:WorkflowViewState.IdRef="MessageBox_6">
                                     <ui:MessageBox.Text>
                                       <InArgument x:TypeArguments="x:Object">
-                                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_127">CurrentRow["OrderDate"].ToString().Substring(0,8) +DateAndTime.Now.ToString("HH:mm tt")</CSharpValue>
+                                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_131" xml:space="preserve">CurrentRow["OrderDate"].ToString().Substring(0,8)+"  "+  DateAndTime.Now.ToString("HH:mm tt")</CSharpValue>
                                       </InArgument>
                                     </ui:MessageBox.Text>
                                   </ui:MessageBox>
@@ -468,7 +473,7 @@
                                     </uix:NTypeInto.Target>
                                     <uix:NTypeInto.Text>
                                       <InArgument x:TypeArguments="x:String">
-                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_128" xml:space="preserve">CurrentRow["OrderDate"].ToString().Substring(0,8)+"  "+  DateAndTime.Now.ToString("HH:mm tt")</CSharpValue>
+                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_142">DateTime.ParseExact(CurrentRow["OrderDate"].ToString(), "MM/dd/yyyy HH:mm:ss", CultureInfo.InvariantCulture).ToString("yyyyyy//MM//dd") + "00:00"</CSharpValue>
                                       </InArgument>
                                     </uix:NTypeInto.Text>
                                   </uix:NTypeInto>
@@ -534,7 +539,7 @@
                   </sc:BindingList>
                 </ui:IfElseIf.ConditionBlocks>
               </ui:IfElseIf>
-              <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="668,2686" sap2010:WorkflowViewState.IdRef="IfElseIf_7">
+              <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="577,2686" sap2010:WorkflowViewState.IdRef="IfElseIf_7">
                 <ui:IfElseIf.ConditionBlocks>
                   <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                     <ui:IfElseIfBlock BlockType="If">
